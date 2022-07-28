@@ -7,5 +7,5 @@
   <h2> Parâmetros </h2>
       <p> ./generator [n] [d]
   
-      <h3> [n] </h3>
+      <h4> [n] </h4>
         <p> Número 
