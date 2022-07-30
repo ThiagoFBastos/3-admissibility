@@ -5,7 +5,7 @@
     
  Se quisermos encontrar um grafo qualquer $G$ com $\sigma_{T}(G)$ $\le$ $k$, nós supomos que $T$ seja uma de suas árvores geradoras em que $\sigma_{T}(G)$ $=$ $\sigma(T)$ e assim todo par de vértices $(u,v)$ com $1$ $\le$ $d(u,v)$ $\le$ $k$ é uma possível aresta em $G$. Assim, se quisermos todos os $G$ com $\sigma_{T}(G)$ $\le$ $k$ consideramos que qualquer árvore possa ser uma possível árvore geradora com $\sigma_{T}(G)$ $=$ $\sigma(T)$ nos levando a achar todas as árvores rotuladas de $n$ vértices.
     
- Como um grafo pode ter mais de uma árvore geradora, o algoritmo acima pode resultar em grafos duplicados e por isso utilizamos nos algoritmos estruturas que funcionem como um conjunto: Tries e Tabelas Hash que armazenam as matrizes de adjacências dos grafos que são tratadas como strings binárias pela Trie e como um números inteiros pela a Tabela Hash.
+ Como um grafo pode ter mais de uma árvore geradora, o algoritmo acima pode resultar em grafos duplicados e por isso utilizamos nos algoritmos estruturas que funcionem como um conjunto: Tries, armazenadas na memória principal, e Tabelas Hash, armazenadas em arquivos binários, que armazenam as matrizes de adjacências dos grafos que são tratadas como strings binárias pela Trie e como um números inteiros pela a Tabela Hash.
 
   ## D(3)+trie+is_2_admissible
   
@@ -20,7 +20,7 @@
   #### ./generator [n] [d]
   
   ##### [n]
-  Número de vértice do grafo a ser gerado
+  Número de vértices do grafo a ser gerado (Tome cuidado com testes em que n $>$ 7)
   
   ##### [d]
   Nome do arquivo que contém os grafos e suas propriedades
@@ -48,7 +48,7 @@
   #### ./generator [n] [d]
   
   ##### [n]
-  Número de vértice do grafo a ser gerado
+  Número de vértices do grafo a ser gerado (Tome cuidado com testes em que n $>$ 7)
   
   ##### [d]
   Nome do arquivo que contém os grafos e suas propriedades
@@ -57,20 +57,20 @@
 
    Dados o número de vértices $n$ e a quantidade de instâncias à serem geradas $k$, encontramos $k$ grafos obtidos de maneira aleatória que possuam $2$ $\le$ $\sigma_{T}(G)$ $\le$ $3$. Para encontrar um grafo que satisfaça esse requisito, supomos uma de suas árvores geradoras $T$ em que $\sigma(T)$ $=$ $\sigma_{T}(G)$ e adicionamos todas as arestas possíveis em que $\sigma_{T}(G)$ $\le$ $3$. Após isso, utilizamos o algoritmo polinomial para verificar se o grafo é 2-admissível.
   
-   ### Pré-Requisitos
+   #### Pré-Requisitos
   A biblioteca [ogdf](https://ogdf.uos.de/2022/02/02/dogwood/) foi usada para determinar as componentes triconexas necessárias no algoritmo polinomial que reconhece grafos 2-admissíveis
   
-  ### Parâmetros
+  #### Parâmetros
   
-  #### ./generator [n] [i] [d]
+  ##### /generator [n] [i] [d]
   
-  ##### [n]
+  ###### [n]
   Número de vértices do grafo a ser gerado
   
-  ##### [i]
+  ###### [i]
   Número de instâncias a serem geradas
   
-  ##### [d]
+  ###### [d]
   Nome do arquivo que contém os grafos e suas propriedades
   
   ## LeitorDoBinario
