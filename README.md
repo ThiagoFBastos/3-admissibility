@@ -13,7 +13,7 @@
         Após isso, encontramos o conjunto $S$ de todos os pares de vértices $(u, v)$, com $2$ $\le$ $d(u, v)$ $\le$ $3$, e para cada subconjunto possível de $S$ criamos um novo grafo $G^{'}$ em que $(u, v)$ $\in$ $E(G^{'})$, desde que $G^{'}$ não possua um vértice universal.  Após isso, utilizamos o algoritmo polinomial para verificar se o grafo é 2-admissível.
   
   ### Pré-Requisitos
-  A biblioteca [ogdf](https://ogdf.uos.de/2022/02/02/dogwood/) foi usada para determinar as componentes triconexas necessárias no algoritmo polinomial que reconhece grafos 2-admissíveis
+  A biblioteca [ogdf](https://ogdf.uos.de/2022/02/02/dogwood/) foi usada para determinar as componentes triconexas necessárias no algoritmo polinomial que reconhece grafos 2-admissíveis e deve ser instalada na pasta /home com o nome OGDF.
   
   ### Parâmetros
   
@@ -58,7 +58,7 @@
    Dados o número de vértices $n$ e a quantidade de instâncias à serem geradas $k$, encontramos $k$ grafos obtidos de maneira aleatória que possuam $2$ $\le$ $\sigma_{T}(G)$ $\le$ $3$. Para encontrar um grafo que satisfaça esse requisito, supomos uma de suas árvores geradoras $T$ em que $\sigma(T)$ $=$ $\sigma_{T}(G)$ e adicionamos todas as arestas possíveis em que $\sigma_{T}(G)$ $\le$ $3$. Após isso, utilizamos o algoritmo polinomial para verificar se o grafo é 2-admissível.
   
    #### Pré-Requisitos
-  A biblioteca [ogdf](https://ogdf.uos.de/2022/02/02/dogwood/) foi usada para determinar as componentes triconexas necessárias no algoritmo polinomial que reconhece grafos 2-admissíveis
+  A biblioteca [ogdf](https://ogdf.uos.de/2022/02/02/dogwood/) foi usada para determinar as componentes triconexas necessárias no algoritmo polinomial que reconhece grafos 2-admissíveis e deve ser instalada na pasta /home com o nome OGDF.
   
   #### Parâmetros
   
