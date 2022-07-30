@@ -27,14 +27,14 @@
   
   ## hash+thread
   
-   Encontra todos os grafos que possuam $\sigma_{T}(G)$ $=$ 2 e $\sigma_{T}(G)$ $=$ 3 tirando a vantagem do próprio objetivo para descobrir $\sigma$. Por isso, focamos primeiramente nos que possuem 1 $<$ $\sigma_{T}(G)$ $\le$ 2 e colocamos as matrizes de adjacências em um certo conjunto $S$(hash), em seguida naqueles com 1 $<$ $\sigma_{T}(G)$ $\le$ $3$ que não estão em $S$ e os colocamos em um conjunto $S^{'}$(hash). Com isso, os grafos com $\sigma(G)$ $=$ 2 estão em $S$ e os com $\sigma(G)$ $=$ 3 em $S^{'}$.
+   Encontra todos os grafos que possuam $\sigma_{T}(G)$ $=$ 2 e $\sigma_{T}(G)$ $=$ 3 tirando a vantagem do próprio objetivo para descobrir $\sigma$. Por isso, focamos primeiramente nos que possuem 1 $<$ $\sigma_{T}(G)$ $\le$ 2 e colocamos as matrizes de adjacências em um certo conjunto $S$ (hash), em seguida naqueles com 1 $<$ $\sigma_{T}(G)$ $\le$ $3$ que não estão em $S$ e os colocamos em um conjunto $S^{'}$ (hash). Com isso, os grafos com $\sigma(G)$ $=$ 2 estão em $S$ e os com $\sigma(G)$ $=$ 3 em $S^{'}$.
 
   ### Parâmetros
   
   #### ./generator [n] [d]
   
   ##### [n]
-  Número de vértice do grafo a ser gerado
+  Número de vértices do grafo a ser gerado
   
   ##### [d]
   Nome do arquivo que contém os grafos e suas propriedades
@@ -65,7 +65,7 @@
   #### ./generator [n] [i] [d]
   
   ##### [n]
-  Número de vértice do grafo a ser gerado
+  Número de vértices do grafo a ser gerado
   
   ##### [i]
   Número de instâncias a serem geradas
