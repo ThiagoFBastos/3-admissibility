@@ -50,6 +50,6 @@ Nome do arquivo que contém os grafos e suas propriedades
 ## LeitorDoBinario
 Lê o arquivo binário e exibe na tela as matrizes de adjacências e os atributos guardados.
 ### Parâmetros
-#### ./generator [d]
+#### ./tradutor [d]
 ##### [d]
 Nome do arquivo que contém os grafos e suas propriedades 
