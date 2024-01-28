@@ -1,5 +1,5 @@
-INCLUDE = ~/OGDF/include
-LIB = ~/OGDF
+INCLUDE = ./OGDF/include
+LIB = ./OGDF
 FILES = tree.o opBasic.o graph.o generator.o
 
 all: $(FILES)
