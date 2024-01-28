@@ -7,7 +7,7 @@ Como um grafo pode ter mais de uma árvore geradora, o algoritmo acima pode resu
 Construimos os grafos $G$ com $2$ $\le$ $\sigma$ $\le$ $3$ a partir das árvores com diâmetro igual a três que são obtidas ao selecionar os dois vértices que pertencem ao $c(G)$ e distribuímos os demais entre as vizinhanças dos vértices no centro.
 Após isso, encontramos o conjunto $S$ de todos os pares de vértices $(u, v)$, com $2$ $\le$ $d(u, v)$ $\le$ $3$, e para cada subconjunto possível de $S$ criamos um novo grafo $G^{'}$ em que $(u, v)$ $\in$ $E(G^{'})$, desde que $G^{'}$ não possua um vértice universal.  Após isso, utilizamos o algoritmo polinomial para verificar se o grafo é 2-admissível.
 ### Pré-Requisitos
-* A biblioteca [ogdf](https://ogdf.uos.de/2022/02/02/dogwood/) foi usada para determinar as componentes triconexas necessárias no algoritmo polinomial que reconhece grafos 2-admissíveis e deve ser instalada na pasta /home com o nome OGDF.
+* A biblioteca [ogdf](https://ogdf.uos.de/2022/02/02/dogwood/) foi usada para determinar as componentes triconexas necessárias no algoritmo polinomial que reconhece grafos 2-admissíveis.
 ### Parâmetros
 #### ./generator [n] [d]
 ##### [n]
